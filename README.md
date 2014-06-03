@@ -20,3 +20,11 @@ Add the package as a dependency to your composer.json
     "require": {
         "cloud-solutions/apigility-xml": "dev-master"
     }
+
+Run `composer update` and add the module main module configuration as `ApigilityXml`.
+
+###Example of what works
+
+- You can chose `Xml` as a Content Negotiation Selector in your service configuration
+- You can have your Resource return a nested PHP array and it will be rendered as Xml
+- You can prefix array keys with `@` if you want them to be rendered as attributes of the parent element
