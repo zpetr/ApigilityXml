@@ -57,7 +57,8 @@ class Xml extends AbstractAdapter
         $options = $this->getOptions();
 
         try {
-            $dom = new DOMDocument('1.0', 'utf-8');
+            $dom = new DOMDocument($options->getXmlVersion(), $options->getEncoding());
+            $dom->xmlStandalone = $options->isStandalone();
             $root = $dom->appendChild($dom->createElement($options->getRootNode()));
             $this->createNodes($dom, $value, $root);
             return $dom->saveXml();
