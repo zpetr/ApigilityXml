@@ -12,16 +12,14 @@ Important:
 
 ###Installation
 
-Look it up on https://packagist.org.
-
-Add the package as a dependency to your composer.json
+Look it up on https://packagist.org, add the package as a dependency to your composer.json
 
 
     "require": {
         "cloud-solutions/apigility-xml": "dev-master"
     }
 
-Run `composer update` and add the module main module configuration as `ApigilityXml`.
+Run `composer update` and add the module to your main module configuration as `ApigilityXml`.
 
 ###Example of what works
 
