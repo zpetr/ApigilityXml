@@ -49,7 +49,7 @@ class XmlStrategy extends AbstractListenerAggregate
      * Set the content-type character set
      *
      * @param  string $charset
-     * @return JsonStrategy
+     * @return XmlStrategy
      */
     public function setCharset($charset)
     {
@@ -68,8 +68,7 @@ class XmlStrategy extends AbstractListenerAggregate
     }
 
     /**
-     * Detect if we should use the XmlRenderer based on model type and/or
-     * Accept header
+     * Detect if we should use the XmlRenderer based on model type
      *
      * @param  ViewEvent $e
      * @return null|XmlRenderer

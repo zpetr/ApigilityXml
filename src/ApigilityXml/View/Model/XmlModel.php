@@ -37,6 +37,7 @@ class XmlModel extends ViewModel
     {
         $variables = $this->getVariables();
 
+
         if ($variables instanceof Traversable) {
             $variables = ArrayUtils::iteratorToArray($variables);
         }
