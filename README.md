@@ -14,3 +14,9 @@ Important:
 
 Look it up on https://packagist.org.
 
+Add the package as a dependency to your composer.json
+
+
+    "require": {
+        "cloud-solutions/apigility-xml": "dev-master"
+    }
