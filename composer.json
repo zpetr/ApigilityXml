@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ApigilityXml\\": "src/"
+            "ApigilityXml\\": "src/ApigilityXml/"
         },
         "classmap": [
             "Module.php"
