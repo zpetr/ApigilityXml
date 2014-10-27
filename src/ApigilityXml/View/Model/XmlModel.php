@@ -43,7 +43,7 @@ class XmlModel extends ViewModel
         }
 
         $payload = $variables['payload'];
-        $collection = $payload->getCollection();
+        $collection = $payload->entity->getCollection();
         $serializer = new XmlSerializer();
         $xml = $serializer->serialize($collection);
 
