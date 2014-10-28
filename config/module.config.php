@@ -30,4 +30,12 @@ return array(
         // The allowed content type may be a string, or an array of strings.
         'content_type_whitelist' => array(),
     ),
+    'service_manager' => array(
+        'factories' => array(
+            'xmlStrategy' => function(\Zend\ServiceManager\ServiceLocatorInterface $serviceLocator) {
+                    $renderer = new \ApigilityXml\View\Renderer\XmlRenderer();
+                    return new \ApigilityXml\View\Strategy\XmlStrategy($renderer);
+                },
+        )
+    )
 );
