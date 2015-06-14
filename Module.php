@@ -45,7 +45,7 @@ class Module
         $app          = $e->getTarget();
         $locator      = $app->getServiceManager();
         $view         = $locator->get('Zend\View\View');
-        $xmlStrategy  = $locator->get('ApigilityXml\View\Strategy\XmlStrategy');
+        $xmlStrategy  = $locator->get('xmlStrategy');
 
         // Attach strategy, which is a listener aggregate, at high priority
         $view->getEventManager()->attach($xmlStrategy, 100);
