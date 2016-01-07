@@ -1,6 +1,13 @@
 ABANDONED PROJECT
 =================
 
+
+----------
+Please use insteed it the [new version of this module maintained by zPetr][new_version].
+[new_version]: https://github.com/zpetr/apigility-xmlnegotiation
+
+----------
+
 ApigilityXml
 ============
 
